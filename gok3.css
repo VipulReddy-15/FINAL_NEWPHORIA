@@ -20,7 +20,7 @@ body, html {
 
 .content-section {
     height: 850px; /* or as per content */
-
+    background-color:#992b66;
     padding: 20px;
     text-align: center;
 }
