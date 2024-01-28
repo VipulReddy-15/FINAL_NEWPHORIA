@@ -6,6 +6,7 @@ body {
     background-image: url('https://images.hdqwalls.com/wallpapers/new-memories-41.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .container {
     max-width: 800px;
