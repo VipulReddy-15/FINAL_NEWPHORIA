@@ -2,29 +2,81 @@
 <html>
 <head>
 	<title>Input</title>
-	<link rel="stylesheet" type="text/css" href="input.css">
+	<link rel="stylesheet" type="text/css" href="">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<script src="input.js"></script>
+</head>
+<body>
+	<title>Destination and Number of Days</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+			background-image: url('https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(8px);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
-	<div class="container-heading">
-		<h1 style="	font-family: 'Poppins', sans-serif; text-align: center; font-size: 2.5rem;">Plan your trip now!!</h1>
-	</div>
+    <div class="form-container">
+        <h2> PLAN YOUR TRIP!! </h2>
 
-	<div class="container">
-		<div class="contact-box">
-			<h3 style="	font-family: 'Poppins', sans-serif; text-align: center; font-size: 1.5rem;"> Destination</h3>
-			<input type="text" class="field" placeholder="Enter Destination">
-			<h3 style="	font-family: 'Poppins', sans-serif; text-align: center; font-size: 1.5rem;"> Days</h3>
-			<select class="field">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3" selected>3</option>
-			</select>
-			<br>
-			<button class="btn">Send</button>
-		</div>
-	</div>
+        <form id = "destinationForm">
+            
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+
+            <label for="numberOfDays">Number of Days:</label>
+            <input type="number" id="days" name="days" placeholder="Enter the number of days" required>
+
+            <button type="submit" > Submit </button>
+        
+    </div>
+    <script src = "input.js"></script>
+
+	
+
 </body>
 </html>

@@ -79,6 +79,15 @@ header{
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
 header nav{
     background-color: rgba(255, 254, 254, 0);
     max-width: 1400px;
@@ -369,4 +378,9 @@ button {
 
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+html{
+    scroll-behavior: smooth;
+
 }
